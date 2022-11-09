@@ -1,6 +1,10 @@
-public class EmployeeWithTerritory extends Employee
-{
+public class EmployeeWithTerritory extends Employee {
    private int territory;
+
+   public EmployeeWithTerritory(int id, double salary, int terr){
+      super(id, salary);
+      territory = terr;
+   }
    public int getTerritory()
    {
       return territory;
@@ -9,4 +13,4 @@ public class EmployeeWithTerritory extends Employee
    {
       territory = terr;
    }
-}
+}//ends class

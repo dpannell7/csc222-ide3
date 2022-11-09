@@ -1,22 +1,28 @@
-public class Employee
-{
-   private int id;
-   private double salary;
+public class Employee {
+
+   private int idNumber;
+   private double baseSalary;
+
+   public Employee(int id, double salary) {
+      idNumber = id;
+      baseSalary = salary;
+   }
+
    public int getId()
    {
-      return id;
+      return idNumber;
    }
    public double getSalary()
    {
-      return salary;
+      return baseSalary;
    }
    public void setId(int idNum)
    {
-      id = idNum;
+      idNumber = idNum;
    }
    public void setSalary(double sal)
    {
-      salary = sal;
+      baseSalary = sal;
    }
-}
+}//ends class
 

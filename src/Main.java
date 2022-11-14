@@ -20,17 +20,35 @@ public class Main {
         if(employeeType == 1){
             Employee employee1 = new Employee(0, 0);
             System.out.println(" ");
-            System.out.println("******************************************");
             System.out.println("You have chosen to create a Standard Employee");
             System.out.print("Enter the new employee's ID number: ");
             employee1.setId(input.nextInt());
             System.out.print("Enter the new employee's Salary: ");
             employee1.setSalary(input.nextDouble());
+            System.out.println(" ");
             System.out.println("Employee: #" +employee1.getId()+ " has been created and assigned a salary of $" +employee1.getSalary());
-        }
+        }// ends employee type 1 if statement
 
+        //  if statement for employee type 2
+        if(employeeType == 2) {
+            EmployeeWithTerritory employee2 = new EmployeeWithTerritory(0, 0, 0);
+            System.out.println(" ");
+            System.out.println("You have chosen to create a Standard Employee");
+            System.out.print("Enter the new employee's ID number: ");
+            employee2.setId(input.nextInt());
+            System.out.print("Enter the new employee's Salary: ");
+            employee2.setSalary(input.nextDouble());
+            System.out.print("What territory will they be servicing? '1' = Northern, '2' = Southern, '3' = Eastern, '4' = Western : ");
+            employee2.setTerritory(input.nextInt());
+            System.out.println(" ");
+            System.out.println("Employee: #" + employee2.getId() + " has been created and assigned a salary of $" + employee2.getSalary());
+                if(employee2.getTerritory() == 1){System.out.println("They will be servicing the Northern territory");}
+                else if(employee2.getTerritory() == 2){System.out.println("They will be servicing the Southern territory");}
+                else if(employee2.getTerritory() == 3){System.out.println("They will be servicing the Eastern territory");}
+                else if(employee2.getTerritory() == 4){System.out.println("They will be servicing the Western territory");}
+        }// ends if statement for employee type 2
 
-
+        
 
         /*Employee employee1 = new Employee(01, 45000);
         employee1.setId(23);

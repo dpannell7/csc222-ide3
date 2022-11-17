@@ -1,5 +1,5 @@
+// copied from textbook as is. no alteration
 public class Employee {
-
    private int idNumber;
    private double baseSalary;
 
@@ -24,5 +24,5 @@ public class Employee {
    {
       baseSalary = sal;
    }
-}//ends class
+}//ends employee class
 
